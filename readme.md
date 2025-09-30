@@ -7,13 +7,11 @@ Simple Spring Boot REST API to manage Products, Customers and Orders (H2 in-memo
 2. Build: mvn clean package
 3. Run: mvn spring-boot:run or run ProductOrderApplication in IDE
 4. H2 console: http://localhost:8080/h2-console (jdbc:h2:mem:productdb, user=sa, password=)
-5. Swagger UI (if included): http://localhost:8080/swagger-ui.html
-
+   
 ## Endpoints
 - POST /api/products
-- GET  /api/products (pagination: ?page=0&size=10)
+- GET  /api/products
 - POST /api/customers
 - POST /api/orders
 - GET  /api/orders/{id}
 - PUT  /api/orders/{id}/cancel
-- GET  /api/orders/summary
