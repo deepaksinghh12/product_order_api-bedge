@@ -25,17 +25,14 @@ public class Order {
     @Enumerated(EnumType.STRING)
     private Status status;
 
-    // ----- Inner enum -----
     public enum Status {
         NEW,
         CANCELLED,
         COMPLETED
     }
 
-    // ----- Constructors -----
     public Order() {}
 
-    // Builder support
     public static Builder builder() {
         return new Builder();
     }
